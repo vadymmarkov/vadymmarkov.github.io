@@ -1,7 +1,1 @@
-_site/
-.asset-cache
 .DS_STORE
-.jekyll-cache/
-.jekyll-metadata
-.sass-cache/
-node_modules
