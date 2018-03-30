@@ -4,10 +4,12 @@ GITHUB_REPONAME = 'vadymmarkov.github.io'
 
 desc 'Generate blog files'
 task :generate do
-  system 'bundle exec jekyll build'
+  system 'JEKYLL_ENV=production bundle exec jekyll build'
 end
 
-desc 'Generate and publish blog to gh-pages'
+desc 'Publish website to gh-pages'
 task :publish => [:generate] do
-  
+  system 'git checkout master'
+  system 'cp -a _site/. .'
+  system 'rm -rf _site'
 end

@@ -14,10 +14,10 @@ twitter_url: https://twitter.com/vadymmarkov
 linkedin_url: https://www.linkedin.com/in/vadymmarkov
 
 # Build settings
+
 assets:
-  compress:
-    css: true
-    js: true
+  source_maps: false
+  compression: true
 
 exclude:
   - .DS_Store
@@ -25,4 +25,5 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - Rakefile
   - vendor

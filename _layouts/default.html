@@ -11,10 +11,10 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="{% asset_path favicon-32x32.png %}"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="{% asset_path favicon-16x16.png %}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="{% asset favicon-32x32.png @path %}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="{% asset favicon-16x16.png @path %}"/>
 
-    {% css style.css %}
+    {% asset style.css %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -26,6 +26,6 @@
     <div id="sound-bars"></div>
 
     <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    {% js main.js %}
+    {% asset main.js %}
   </body>
 </html>
