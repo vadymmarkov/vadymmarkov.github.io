@@ -1,0 +1,23 @@
+.panel {
+  h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 300;
+    color: $primary;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 54px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 200;
+    color: $secondary;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 34px;
+    }
+  }
+}
