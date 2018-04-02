@@ -10,6 +10,9 @@ end
 
 desc 'Publish website to gh-pages'
 task :publish => [:generate] do
+  commit
+  system 'git push origin sources'
+
   system 'git checkout master'
   system 'rm -rf assets *.html'
   system 'cp -a _site/. .'
@@ -18,8 +21,6 @@ task :publish => [:generate] do
   system 'git push origin master'
 
   system 'git checkout sources'
-  commit
-  system 'git push origin sources'
 end
 
 def commit
