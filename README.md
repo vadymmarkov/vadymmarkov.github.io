@@ -12,4 +12,4 @@ Credits for inspiration go to https://github.com/nrandecker/particle Jekyll them
 
 ## License
 
-**When** is available under the MIT license. See the [LICENSE](https://github.com/vadymmarkov/When/blob/master/LICENSE.md) file for more info.
+**vadymmarkov.github.io** is available under the MIT license. See the [LICENSE](https://github.com/vadymmarkov/When/blob/master/LICENSE.md) file for more info.
