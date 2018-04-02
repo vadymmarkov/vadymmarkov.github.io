@@ -4,6 +4,7 @@ GITHUB_REPONAME = 'vadymmarkov.github.io'
 
 desc 'Generate blog files'
 task :generate do
+  system 'rm -rf _site'
   system 'rm -rf .jekyll-cache'
   system 'JEKYLL_ENV=production bundle exec jekyll build'
 end
